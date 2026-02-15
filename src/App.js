@@ -3,6 +3,7 @@ import { UISpotlight } from "./Components/UISpotlight";
 import { Project } from "./Components/Project";
 import { ContactMe } from "./Components/ContactMe";
 import { useState } from "react";
+import { FaLightbulb } from "react-icons/fa";
 function App() {
 
   const [darkMode, setDarkMode] = useState(false);
@@ -11,7 +12,7 @@ function App() {
     <div className={`m-0 p-0 ${darkMode ? "homeDarkmode": ""}`}>
       <div className={`text-4xl columns-2 py-5 bg-[#b8dedc] border-b-4 ${darkMode ? "navDarkmode": ""}`}>
         <h1 className="font-bold text-blue-500 ml-20">Nguyen Dang</h1>
-        <button onClick={() => setDarkMode(!darkMode)}>Dark Mode</button>
+        <button onClick={() => setDarkMode(!darkMode)}><FaLightbulb /></button>
         <div className="columns-2 mr-20 float-right">
           <ul>
             <li>
@@ -24,11 +25,10 @@ function App() {
         </div>
       </div>
 
-      <IntroParagraph id="contactMe"/>
-
+      <IntroParagraph/>
+      <Project/>
       <UISpotlight />
 
-      <Project/>
 
       <ContactMe />
     </div>

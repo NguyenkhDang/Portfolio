@@ -1,9 +1,30 @@
 import React from 'react'
-
+import { IconContext } from 'react-icons';
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 export const ContactMe = () => {
   return (
-    <div>
-      Contact Me
-    </div>
+    <section id='contactMe' className='text-center text-2xl'>
+      <h1>Contact Me</h1>
+      <div className='grid grid-cols-[0.25fr_0.25fr] justify-center leading-10 '>
+        <div className='border-2'>
+          <h1>📍Address</h1>
+          <p>Minnesota, United States</p>
+        </div>
+    
+        <div className='border-2'>
+          <h1>🔎 Social</h1>
+          <div className='flex gap-10 justify-self-center'>
+            <IconContext.Provider value={{size: "2em", style: {display: "inline-block"}}}>
+              <a href='https://github.com/NguyenkhDang' target='_blank'><FaGithub /></a>
+            </IconContext.Provider>
+            
+            <IconContext.Provider value={{size: "2em", style: {display: "inline-block"}}}>
+              <a href='https://www.linkedin.com/in/nguyen-dang-82b944254/' target='_blank'><FaLinkedin /></a>
+            </IconContext.Provider>
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }

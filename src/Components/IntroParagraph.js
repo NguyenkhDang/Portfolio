@@ -40,9 +40,9 @@ export const IntroParagraph = () => {
           />
         </div>
         <div className='text-center'>
-          <h1 className='text-5xl'>{"<h1>Frontend Developer</h1>"}</h1>
-            Hello, My name is Nguyen <br />
-            A web developer who can make 
+          <h1 className='text-5xl'>Hello, I'm Nguyen Dang</h1>
+            <p className='text-2xl'>A 20-year-old working to become a Front-End Developer <br />
+            I can make </p>
             <div className='block w-min m-auto'>
               <p className={`text ${deleting ? "delete" : ""}`}>{text}</p>
             </div>

@@ -8,7 +8,7 @@ import { LoadingBar } from './UI Components/LoadingBar'
 export const UISpotlight = () => {
   return (
     <div className='text-center'>
-      <h1 className="text-center text-5xl pb-5">UI elements</h1>
+      <h1 className="text-center text-5xl py-5">UI elements</h1>
       <div className='grid grid-rows-2 grid-cols-[0.25fr_0.25fr_0.25fr] place-items-center justify-center'>
         <div className="border-2 p-24"><OnAndOff /></div>
         <div className="border-2 p-24"><HorizontalSlider /></div>
