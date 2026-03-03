@@ -1,7 +1,6 @@
 import { IntroParagraph } from "./Components/IntroParagraph";
-import { UISpotlight } from "./Components/UISpotlight";
 import { Project } from "./Components/Project";
-import { ContactMe } from "./Components/ContactMe";
+
 import { useState } from "react";
 import { FaLightbulb } from "react-icons/fa";
 function App() {
@@ -27,10 +26,6 @@ function App() {
 
       <IntroParagraph/>
       <Project/>
-      <UISpotlight />
-
-
-      <ContactMe />
     </div>
   );
 }

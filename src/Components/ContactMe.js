@@ -1,12 +1,12 @@
-import React from 'react'
-import { IconContext } from 'react-icons';
+
+import { IconContext } from 'react-icons'; // https://react-icons.github.io/react-icons/
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 export const ContactMe = () => {
   return (
-    <section id='contactMe' className='text-center text-2xl'>
+    <div id='contactMe' className='text-center text-2xl'>
       <h1>Contact Me</h1>
-      <div className='grid grid-cols-[0.25fr_0.25fr] justify-center leading-10 '>
+      <div className='grid grid-cols-2 justify-center leading-10 '>
         <div className='border-2'>
           <h1>📍Address</h1>
           <p>Minnesota, United States</p>
@@ -25,6 +25,6 @@ export const ContactMe = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }

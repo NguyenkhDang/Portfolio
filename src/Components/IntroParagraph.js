@@ -1,6 +1,14 @@
 import React, { useEffect } from 'react'
+import { IconContext } from "react-icons";
 import { useState } from 'react'
-import Profile2 from "../Images/profilePic2.jpg"
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaNodeJs } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+import { FaReact} from "react-icons/fa";
+import { SiVite } from "react-icons/si";
+import { ContactMe } from './ContactMe'
 export const IntroParagraph = () => {
   const word = ["fun", "creative", "interactive"]
   const [text, setText] = useState("interactive")
@@ -31,14 +39,7 @@ export const IntroParagraph = () => {
 
   return (
     <div className='place-items-center mt-16'>
-      <div className='grid grid-cols-[0.25fr_0.75fr] w-5/6 border-8'>
-        <div className='drop-shadow-2xl'>
-          <img
-            src={Profile2}
-            className="max-h-64 w-auto justify-self-center"
-            alt="profile-picture"
-          />
-        </div>
+      <div className='grid grid-cols-2 w-5/6 border-8 place-items-center '>
         <div className='text-center'>
           <h1 className='text-5xl'>Hello, I'm Nguyen Dang</h1>
             <p className='text-2xl'>A 20-year-old working to become a Front-End Developer <br />
@@ -46,7 +47,42 @@ export const IntroParagraph = () => {
             <div className='block w-min m-auto'>
               <p className={`text ${deleting ? "delete" : ""}`}>{text}</p>
             </div>
-            customs components for website. 
+            <p className='text-2xl'>customs components for website. </p>
+        </div>
+        <div>
+          <ContactMe />
+          <div className='grid grid-cols-7 mt-5'>
+            <IconContext.Provider value={{size: "4em"}}>
+              <div className='grid grid-rows-2'>
+                <FaHtml5 title='HTML'/>
+                <h1>3+ Years</h1>
+              </div>
+              <div className='grid grid-rows-2'>
+                <FaCss3Alt title='CSS'/>
+                <h1>2+ Years</h1>
+              </div>
+              <div className='grid grid-rows-2'>
+                <IoLogoJavascript title='JavaScript'/>
+                <h1>2+ Years</h1>
+              </div>
+              <div className='grid grid-rows-2'>
+                <FaNodeJs title='NodeJS'/>
+                <h1>1+ Years</h1>
+              </div>
+              <div className='grid grid-rows-2'>
+                <SiTypescript title='TypeScript'/>
+                <h1>1+ Years</h1>
+              </div>
+              <div className='grid grid-rows-2'>
+                <FaReact title='React'/>
+                <h1>1+ Years</h1>
+              </div>
+              <div className='grid grid-rows-2'>
+                <SiVite title='Vite'/>
+                <h1>1+ Years</h1>
+              </div>
+            </IconContext.Provider>
+          </div>
         </div>
       </div>
     </div>

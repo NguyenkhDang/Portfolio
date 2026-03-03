@@ -1,16 +1,19 @@
-import { FaReact} from "react-icons/fa";
+import { FaReact} from "react-icons/fa"; //https://react-icons.github.io/react-icons/
 import { FaGithub } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { FaNodeJs } from "react-icons/fa";
+import { SiVite } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
 import Project1 from "../Images/Project1.png"
 import Project2 from "../Images/Project2.png"
 import Project3 from "../Images/Project3.png"
 import Project4 from "../Images/Project4.png"
+import Project5 from "../Images/Project5.png"
 export const Project = () => {
   return (
     <section id="project">
       <h1 className="text-center text-5xl py-5">My Project</h1>
-      <div className='grid grid-rows-4 gap-56'>
+      <div className='grid grid-rows-4 gap-32'>
         <div className='grid grid-cols-[0.55fr_0.45fr] w-11/12 mx-auto h-min border-2 p-3'>
           <img src={Project1} alt='Project1' className='w-full'/>
           <div className='w-full'>
@@ -27,12 +30,12 @@ export const Project = () => {
                 <li>Mouse-only interaction</li>
               </div>
             </ul>
-             <div className="grid grid-cols-2 place-items-center justify-center mt-6">
+            <div className="grid grid-cols-2 place-items-center justify-center mt-6">
               <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
                 <a href='https://github.com/NguyenkhDang/counting' target="_blank" ><FaGithub /></a>
               </IconContext.Provider>
               <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
-                  <FaReact />
+                  <FaReact title='React'/>
               </IconContext.Provider>
             </div>
           </div>
@@ -56,7 +59,7 @@ export const Project = () => {
                 <a href='https://github.com/NguyenkhDang/Restaurant-Website'target="_blank"><FaGithub /></a>
               </IconContext.Provider>
               <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
-                  <FaReact />
+                  <FaReact title='React'/>
               </IconContext.Provider>
             </div>
           </div>
@@ -80,7 +83,7 @@ export const Project = () => {
                 <a href='https://github.com/NguyenkhDang/kankanboard' target="_blank"><FaGithub /></a>
               </IconContext.Provider>
               <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
-                  <FaReact />
+                  <FaReact title='React'/>
               </IconContext.Provider>
             </div>
           </div>
@@ -103,14 +106,46 @@ export const Project = () => {
                 <a href='https://github.com/NguyenkhDang/Expense-Tracker' target="_blank"><FaGithub /></a>
               </IconContext.Provider>
               <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
-                  <FaReact />
+                  <FaReact title='React'/>
               </IconContext.Provider>
               <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
-                  <FaNodeJs />
+                  <FaNodeJs title='NodeJS'/>
               </IconContext.Provider>
             </div>
           </div>
         </div>
+        <div className='grid grid-cols-[0.55fr_0.45fr] w-11/12 mx-auto h-min border-2 p-3'>
+            <img src={Project5} alt='Project1' className='w-full'/>
+            <div className='w-full'>
+              <h1 className='text-5xl text-center py-10 bg-[#b8dedc] '>Bookmark App</h1>
+              <p className='text-xl py-4 ps-6'>A simple bookmark app, link to URL you want to keep</p>
+              <ul>
+                <h1 className='text-center text-2xl bg-[#d34bd3] w-10/12 m-auto'>Include:</h1>
+                <div className='w-9/12 m-auto text-2xl'>
+                  <li>Add bookmarks with URL and name</li>
+                  <li>Search bookmarks by name (live search)</li>
+                  <li>Delete bookmarks</li>
+                  <li>Fully connected frontend + backend</li>
+                  <li>Deployed backend on Render</li>
+                  <li>Environment variable configuration for backend API</li>
+                </div>
+              </ul>
+              <div className="grid grid-cols-4 place-items-center justify-center mt-6">
+                <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
+                  <a href='https://github.com/NguyenkhDang/BookMark' target="_blank" ><FaGithub /></a>
+                </IconContext.Provider>
+                <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
+                    <SiVite title='Vite'/>
+                </IconContext.Provider>
+                <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
+                  <FaNodeJs title='NodeJS'/>
+                </IconContext.Provider>
+                <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
+                  <SiTypescript title='TypeScript'/>
+                </IconContext.Provider>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
   )
