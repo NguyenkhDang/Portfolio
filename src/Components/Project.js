@@ -9,7 +9,7 @@ import Project2 from "../Images/Project2.png"
 import Project3 from "../Images/Project3.png"
 import Project4 from "../Images/Project4.png"
 import Project5 from "../Images/Project5.png"
-export const Project = () => {
+export const Project = ({darkMode}) => {
   return (
     <section id="project">
       <h1 className="text-center text-5xl py-5">My Project</h1>
@@ -17,8 +17,8 @@ export const Project = () => {
         <div className='grid grid-cols-[0.55fr_0.45fr] w-11/12 mx-auto h-min border-2 p-3'>
           <img src={Project1} alt='Project1' className='w-full'/>
           <div className='w-full'>
-            <h1 className='text-5xl text-center py-10 bg-[#b8dedc] '>Clicker Counter</h1>
-            <p className='text-xl py-4 ps-6'>A clicker counter with every 100 clicks, a live update to the page happen</p>
+            <h1 className={`text-5xl text-center text-blue-500 font-bold py-10 ${darkMode ? "bg-[#2f5f5c]" : "bg-[#b8dedc]"} `}>Clicker Counter</h1>
+            <p className='text-xl py-4 ps-6 '>A clicker counter with every 100 clicks, a live update to the page happen</p>
             <ul>
               <h1 className='text-center text-2xl bg-[#d34bd3] w-10/12 m-auto'>Include:</h1>
               <div className='w-9/12 m-auto text-2xl'>
@@ -32,7 +32,7 @@ export const Project = () => {
             </ul>
             <div className="grid grid-cols-2 place-items-center justify-center mt-6">
               <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
-                <a href='https://github.com/NguyenkhDang/counting' target="_blank" ><FaGithub /></a>
+                <a href='https://github.com/NguyenkhDang/counting' target="_blank" rel="noopener noreferrer"><FaGithub /></a>
               </IconContext.Provider>
               <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
                   <FaReact title='React'/>
@@ -43,7 +43,7 @@ export const Project = () => {
         <div className='grid grid-cols-[0.55fr_0.45fr] w-11/12 mx-auto h-min border-2 p-3'>
           <img src={Project2} className="pl-0.5" alt='Project2'/>
           <div className='w-full'>
-            <h1 className='text-5xl text-center py-10 bg-[#b8dedc]'>Restaurant Page</h1>
+            <h1 className={`text-5xl text-center text-blue-500 font-bold py-10 ${darkMode ? "bg-[#2f5f5c]" : "bg-[#b8dedc]"} `}>Restaurant Page</h1>
             <p className='text-xl py-4 ps-6'>A Restaurant Page featuring multiple pages such as Home Page, Menus Page and Reservation Page.</p>
             <ul>
               <h1 className='text-center text-2xl bg-[#d34bd3] w-10/12 m-auto'>Include:</h1>
@@ -56,7 +56,7 @@ export const Project = () => {
             </ul>
              <div className="grid grid-cols-2 place-items-center justify-center mt-6">
               <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
-                <a href='https://github.com/NguyenkhDang/Restaurant-Website'target="_blank"><FaGithub /></a>
+                <a href='https://github.com/NguyenkhDang/Restaurant-Website'target="_blank" rel="noopener noreferrer"><FaGithub /></a>
               </IconContext.Provider>
               <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
                   <FaReact title='React'/>
@@ -67,7 +67,7 @@ export const Project = () => {
         <div className='grid grid-cols-[0.55fr_0.45fr] w-11/12 mx-auto h-min border-2 p-3'>
           <img src={Project3} alt='Project3'/>
           <div className='w-full'>
-            <h1 className='text-5xl text-center py-10 bg-[#b8dedc]'>Todo Task / Kankanboard</h1>
+            <h1 className={`text-5xl text-center text-blue-500 font-bold py-10 ${darkMode ? "bg-[#2f5f5c]" : "bg-[#b8dedc]"} `}>Todo Task / Kankanboard</h1>
             <p className='text-xl py-4 ps-6'>A simple task manager, with adding task to columns such as, Todo, Pending, and Completed</p>
             <ul>
               <h1 className='text-center text-2xl bg-[#d34bd3] w-10/12 m-auto'>Include:</h1>
@@ -80,7 +80,7 @@ export const Project = () => {
             </ul>
             <div className="grid grid-cols-2 place-items-center justify-center mt-6">
               <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
-                <a href='https://github.com/NguyenkhDang/kankanboard' target="_blank"><FaGithub /></a>
+                <a href='https://github.com/NguyenkhDang/kankanboard' target="_blank" rel="noopener noreferrer"><FaGithub /></a>
               </IconContext.Provider>
               <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
                   <FaReact title='React'/>
@@ -91,7 +91,7 @@ export const Project = () => {
         <div className='grid grid-cols-[0.55fr_0.45fr] w-11/12 mx-auto h-min border-2 p-3'>
           <img src={Project4} alt='Project4'/>
           <div className='w-full'>
-            <h1 className='text-5xl text-center py-10 bg-[#b8dedc]'>Expense Tracker</h1>
+            <h1 className={`text-5xl text-center text-blue-500 font-bold py-10 ${darkMode ? "bg-[#2f5f5c]" : "bg-[#b8dedc]"} `}>Expense Tracker</h1>
             <p className='text-xl py-4 ps-6'>An expense tracker that allow user to track their income and expenses with categories. Visual finacial piechart with data from back-end</p>
             <ul>
               <h1 className='text-center text-2xl bg-[#d34bd3] w-10/12 m-auto'>Include:</h1>
@@ -103,7 +103,7 @@ export const Project = () => {
             </ul>
             <div className="grid grid-cols-3 place-items-center justify-center mt-6">
               <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
-                <a href='https://github.com/NguyenkhDang/Expense-Tracker' target="_blank"><FaGithub /></a>
+                <a href='https://github.com/NguyenkhDang/Expense-Tracker' target="_blank" rel="noopener noreferrer"><FaGithub /></a>
               </IconContext.Provider>
               <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
                   <FaReact title='React'/>
@@ -117,7 +117,7 @@ export const Project = () => {
         <div className='grid grid-cols-[0.55fr_0.45fr] w-11/12 mx-auto h-min border-2 p-3'>
             <img src={Project5} alt='Project1' className='w-full'/>
             <div className='w-full'>
-              <h1 className='text-5xl text-center py-10 bg-[#b8dedc] '>Bookmark App</h1>
+              <h1 className={`text-5xl text-center text-blue-500 font-bold py-10 ${darkMode ? "bg-[#2f5f5c]" : "bg-[#b8dedc]"} `}>Bookmark App</h1>
               <p className='text-xl py-4 ps-6'>A simple bookmark app, link to URL you want to keep</p>
               <ul>
                 <h1 className='text-center text-2xl bg-[#d34bd3] w-10/12 m-auto'>Include:</h1>
@@ -132,7 +132,7 @@ export const Project = () => {
               </ul>
               <div className="grid grid-cols-4 place-items-center justify-center mt-6">
                 <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
-                  <a href='https://github.com/NguyenkhDang/BookMark' target="_blank" ><FaGithub /></a>
+                  <a href='https://github.com/NguyenkhDang/BookMark' target="_blank" rel="noopener noreferrer"><FaGithub /></a>
                 </IconContext.Provider>
                 <IconContext.Provider value={{size: "4em", style: {display: "inline-block"}}}>
                     <SiVite title='Vite'/>

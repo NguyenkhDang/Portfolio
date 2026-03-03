@@ -14,9 +14,9 @@ export const IntroParagraph = () => {
   const [text, setText] = useState("interactive")
   const [deleting, setDeleting] = useState(false)
 
-  let count = 0;
   useEffect(() => {
   const cycle = () => {
+    let count = 0;
     setDeleting(false) 
 
     setTimeout(() => {
@@ -55,31 +55,31 @@ export const IntroParagraph = () => {
             <IconContext.Provider value={{size: "4em"}}>
               <div className='grid grid-rows-2'>
                 <FaHtml5 title='HTML'/>
-                <h1>3+ Years</h1>
+                <h1>3+ Year</h1>
               </div>
               <div className='grid grid-rows-2'>
                 <FaCss3Alt title='CSS'/>
-                <h1>2+ Years</h1>
+                <h1>2+ Year</h1>
               </div>
               <div className='grid grid-rows-2'>
                 <IoLogoJavascript title='JavaScript'/>
-                <h1>2+ Years</h1>
-              </div>
-              <div className='grid grid-rows-2'>
-                <FaNodeJs title='NodeJS'/>
-                <h1>1+ Years</h1>
-              </div>
-              <div className='grid grid-rows-2'>
-                <SiTypescript title='TypeScript'/>
-                <h1>1+ Years</h1>
+                <h1>2+ Year</h1>
               </div>
               <div className='grid grid-rows-2'>
                 <FaReact title='React'/>
-                <h1>1+ Years</h1>
+                <h1>1+ Year</h1>
+              </div>
+              <div className='grid grid-rows-2'>
+                <SiTypescript title='TypeScript'/>
+                <h1>-1 Year</h1>
+              </div>
+              <div className='grid grid-rows-2'>
+                <FaNodeJs title='NodeJS'/>
+                <h1>-1 Year</h1>
               </div>
               <div className='grid grid-rows-2'>
                 <SiVite title='Vite'/>
-                <h1>1+ Years</h1>
+                <h1>-1 Year</h1>
               </div>
             </IconContext.Provider>
           </div>
